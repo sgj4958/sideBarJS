@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <script type="text/javascript" src="sideBar.js"></script>
+
+    <style>
+        #main {
+            height: 200vh;
+            background: seashell;
+        }
+        nav#sideWrap #sideHead #sideLogo {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">INDEX HTML</div>
+</body>
+<script>
+    sideBar([
+            {cate1: '중분류1', cate2: '소분류1', link: '11', data: []},
+            {cate1: '중분류1', cate2: '소분류2', link: '12', data: []},
+            {cate1: '중분류1', cate2: '소분류3', link: '13', data: []},
+            {cate1: '중분류1', cate2: '소분류4', link: '14', data: []},
+            {cate1: '중분류1', cate2: '소분류5', link: '15', data: []},
+            {cate1: '중분류1', cate2: '소분류6', link: '16', data: []},
+
+            {cate1: '중분류2', cate2: '소분류1', link: '21', data: []},
+            {cate1: '중분류2', cate2: '소분류2', link: '22', data: []},
+            {cate1: '중분류2', cate2: '소분류3', link: '23', data: []},
+            {cate1: '중분류2', cate2: '소분류4', link: '24', data: []},
+
+            {cate1: '중분류3', cate2: '소분류1', link: '31', data: []},
+            {cate1: '중분류3', cate2: '소분류2', link: '32', data: []},
+        ],
+        ["cate1", "cate2"],
+        ["search", "home", "settings", "favorite", "star", "more_vert"],
+        "link",
+        `<svg width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+        </svg>`,
+        // "https://www.starbucks.co.kr:7643/common/img/common/logo.png",
+        {
+            router: a => alert('router:::' + a),
+            removeSideButton: false,
+            coverAnimation: false
+        }
+    )
+</script>
+</html>
