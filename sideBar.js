@@ -338,7 +338,8 @@ nav#sideWrap:has(#sideButton.removeElement) #sideWrapCover {
             {cate1: '대분류3', cate2: '중분류1', cate3: '소분류1', link: '311', data: []},
             {cate1: '대분류3', cate2: '중분류1', cate3: '소분류2', link: '312', data: []},
             
-            // {cate1: '대분류4', link: '400', data: []},
+            {cate1: '대분류4', cate2: '단일뎁스1', link: '401', data: []},
+            {cate1: '대분류4', cate2: '단일뎁스2', link: '402', data: []},
         ]
         
         const depth2example = [
